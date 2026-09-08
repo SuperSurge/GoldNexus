@@ -1,0 +1,230 @@
+2026-07-02T00:10:54.404+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m39s904ms).
+2026-07-02T00:21:40.817+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m46s414ms).
+2026-07-02T00:45:32.215+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m21s391ms).
+2026-07-02T00:55:46.118+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m13s903ms).
+2026-07-02T01:13:42.810+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m56s692ms).
+2026-07-02T01:19:16.830+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m34s20ms).
+2026-07-02T01:35:19.246+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m2s416ms).
+2026-07-02T01:45:59.201+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m39s955ms).
+2026-07-02T02:08:57.309+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m58s108ms).
+2026-07-02T02:19:37.445+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m40s136ms).
+2026-07-02T02:42:09.797+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m32s351ms).
+2026-07-02T03:05:30.447+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m20s651ms).
+2026-07-02T03:27:27.532+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m57s84ms).
+2026-07-02T03:49:09.131+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m11s564ms).
+2026-07-02T04:15:53.713+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m14s583ms).
+2026-07-02T04:36:46.294+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m52s581ms).
+2026-07-02T04:45:14.789+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m58s482ms).
+2026-07-02T05:01:18.482+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m3s693ms).
+2026-07-02T05:17:48.995+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m30s513ms).
+2026-07-02T05:34:58.830+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m9s835ms).
+2026-07-02T05:40:33.829+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m34s999ms).
+2026-07-02T06:03:38.280+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m4s451ms).
+2026-07-02T06:27:23.845+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m15s558ms).
+2026-07-02T06:50:23.407+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m29s553ms).
+2026-07-02T07:12:50.858+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m27s451ms).
+2026-07-02T07:36:50.168+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m29s322ms).
+2026-07-02T07:46:23.361+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m3s185ms).
+2026-07-02T08:08:07.449+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m44s88ms).
+2026-07-02T08:26:28.945+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m51s485ms).
+2026-07-02T08:47:04.142+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m35s44ms).
+2026-07-02T09:04:11.289+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m37s136ms).
+2026-07-02T10:21:46.874+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m35s29ms).
+2026-07-02T10:24:13.088+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m56s205ms).
+2026-07-02T10:49:38.660+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m25s552ms).
+2026-07-02T11:05:48.174+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m9s514ms).
+2026-07-02T11:11:22.444+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m34s270ms).
+2026-07-02T11:32:23.245+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m801ms).
+2026-07-02T11:43:02.223+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m8s973ms).
+2026-07-02T11:43:56.726+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s503ms).
+2026-07-02T11:59:45.031+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m48s305ms).
+2026-07-02T12:15:35.065+08:00  WARN 68882 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m50s34ms).
+2026-07-02T12:15:40.833+08:00  INFO 68882 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T12:15:40.838+08:00  INFO 68882 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-02T12:15:40.842+08:00  INFO 68882 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-02T12:15:40.843+08:00  INFO 68882 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-02T18:51:46.845+08:00  INFO 80109 --- [main] c.g.GoldNexusBackendApplication          : Starting GoldNexusBackendApplication using Java 25.0.2 with PID 80109 (/Users/surge/code/java/GoldNexusBackend/target/classes started by surge in /Users/surge/code/java/GoldNexusBackend)
+2026-07-02T18:51:46.845+08:00  INFO 80109 --- [main] c.g.GoldNexusBackendApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-07-02T18:51:47.186+08:00  INFO 80109 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-02T18:51:47.190+08:00  INFO 80109 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T18:51:47.190+08:00  INFO 80109 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-07-02T18:51:47.201+08:00  INFO 80109 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-02T18:51:47.201+08:00  INFO 80109 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 342 ms
+2026-07-02T18:51:47.373+08:00  INFO 80109 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-02T18:51:47.464+08:00  INFO 80109 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T18:51:47.468+08:00  INFO 80109 --- [main] c.g.GoldNexusBackendApplication          : Started GoldNexusBackendApplication in 0.789 seconds (process running for 0.996)
+2026-07-02T18:54:01.866+08:00  INFO 80109 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-02T18:54:01.866+08:00  INFO 80109 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-02T18:54:01.868+08:00  INFO 80109 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-07-02T18:54:01.922+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.config.SecurityConfiguration         : 已拦截未登录请求
+2026-07-02T18:54:01.922+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.config.SecurityConfiguration         : 已拦截未登录请求
+2026-07-02T18:54:01.922+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.config.SecurityConfiguration         : 已拦截未登录请求
+2026-07-02T18:54:01.922+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.config.SecurityConfiguration         : 已拦截未登录请求
+2026-07-02T18:54:01.923+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.config.SecurityConfiguration         : Full authentication is required to access this resource
+2026-07-02T18:54:01.923+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.config.SecurityConfiguration         : Full authentication is required to access this resource
+2026-07-02T18:54:01.923+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.config.SecurityConfiguration         : Full authentication is required to access this resource
+2026-07-02T18:54:01.923+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.config.SecurityConfiguration         : Full authentication is required to access this resource
+2026-07-02T18:54:10.924+08:00  INFO 80109 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-02T18:54:11.056+08:00  INFO 80109 --- [http-nio-8080-exec-10] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58e1fded
+2026-07-02T18:54:11.056+08:00  INFO 80109 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-02T18:54:11.058+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.goldnexusbackend.service.UserService   : 用户进行登录请求
+2026-07-02T18:54:11.147+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.goldnexusbackend.service.UserService   : 登录成功
+2026-07-02T18:54:11.213+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:54:11.213+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:54:11.213+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:54:11.213+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:54:11.214+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:54:11.214+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:54:11.214+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:54:11.215+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:54:11.217+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:54:11.218+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:54:11.219+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:54:11.220+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:54:30.020+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:54:30.020+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:54:30.021+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:54:30.021+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:54:30.024+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:54:30.024+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:54:31.212+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:54:31.212+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:54:31.213+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:54:31.213+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:54:31.215+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:54:31.215+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:54:31.222+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:54:31.222+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:55:03.671+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:55:03.671+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:55:03.673+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.service.UserLoanService              : 进行个人历史申请查询请求
+2026-07-02T18:55:03.673+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.service.UserLoanService              : 进行个人历史申请查询请求
+2026-07-02T18:55:03.673+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.service.UserLoanService              : 历史申请记录查询成功
+2026-07-02T18:55:03.673+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.service.UserLoanService              : 历史申请记录查询成功
+2026-07-02T18:55:04.502+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:55:04.503+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:55:04.503+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:55:04.504+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:55:04.504+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:55:04.504+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:55:04.505+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:55:04.505+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.service.UserLoanService              : 查询所有贷款产品
+2026-07-02T18:55:04.505+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.service.UserLoanService              : 查询所有贷款产品
+2026-07-02T18:55:04.506+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:55:04.506+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.service.UserLoanService              : 查询所有贷款产品成功
+2026-07-02T18:55:04.506+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.service.UserLoanService              : 查询所有贷款产品成功
+2026-07-02T18:55:05.377+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:55:05.378+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:55:05.381+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:55:58.834+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:55:58.836+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:55:58.839+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:56:30.730+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:56:30.730+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:56:30.731+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:56:30.731+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:56:30.731+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:56:30.731+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:56:30.732+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:56:30.732+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:56:30.733+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:56:30.733+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:56:30.733+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:56:30.733+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:56:46.458+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： ADMIN id: 3
+2026-07-02T18:56:46.458+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： ADMIN id: 3
+2026-07-02T18:56:46.460+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.service.AdminDataService             : 获取数据总览申请
+2026-07-02T18:56:46.460+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.service.AdminDataService             : 获取数据总览申请
+2026-07-02T18:56:46.468+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.service.AdminDataService             : 
+2026-07-02T18:56:46.468+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.service.AdminDataService             : 
+2026-07-02T18:56:47.217+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： ADMIN id: 3
+2026-07-02T18:56:47.217+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： ADMIN id: 3
+2026-07-02T18:56:47.219+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.service.AdminDataService             : 获取数据总览申请
+2026-07-02T18:56:47.219+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.service.AdminDataService             : 获取数据总览申请
+2026-07-02T18:56:47.222+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.service.AdminDataService             : 
+2026-07-02T18:56:47.222+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.service.AdminDataService             : 
+2026-07-02T18:57:36.903+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:57:36.903+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:57:36.904+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:57:36.905+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:57:36.912+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.service.AiChatService                : 用户id=16 查询AI聊天记录，共8条
+2026-07-02T18:57:36.912+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.service.CustomerService              : 用户id=16 查询客服聊天记录，共4条
+2026-07-02T18:57:36.912+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.g.service.CustomerService              : 用户id=16 查询客服聊天记录，共4条
+2026-07-02T18:57:36.912+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.service.AiChatService                : 用户id=16 查询AI聊天记录，共8条
+2026-07-02T18:58:22.071+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:22.071+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:22.072+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.service.UserLoanService              : 进行个人历史申请查询请求
+2026-07-02T18:58:22.072+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.service.UserLoanService              : 进行个人历史申请查询请求
+2026-07-02T18:58:22.072+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.service.UserLoanService              : 历史申请记录查询成功
+2026-07-02T18:58:22.072+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.service.UserLoanService              : 历史申请记录查询成功
+2026-07-02T18:58:23.412+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:23.412+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:23.413+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.service.UserLoanService              : 查询所有贷款产品
+2026-07-02T18:58:23.413+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:58:23.413+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:23.414+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:23.414+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.g.service.UserLoanService              : 查询所有贷款产品
+2026-07-02T18:58:23.414+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:58:23.414+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:58:23.414+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.service.UserLoanService              : 查询所有贷款产品成功
+2026-07-02T18:58:23.415+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:58:23.415+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.g.service.UserLoanService              : 查询所有贷款产品成功
+2026-07-02T18:58:30.262+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:30.262+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:30.263+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.service.UserLoanService              : 进行个人历史申请查询请求
+2026-07-02T18:58:30.263+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.service.UserLoanService              : 进行个人历史申请查询请求
+2026-07-02T18:58:30.263+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.service.UserLoanService              : 历史申请记录查询成功
+2026-07-02T18:58:30.263+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.service.UserLoanService              : 历史申请记录查询成功
+2026-07-02T18:58:35.996+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:35.996+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:35.997+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:35.997+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:35.998+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.service.UserLoanService              : 查询所有贷款产品
+2026-07-02T18:58:35.998+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.service.UserLoanService              : 查询所有贷款产品
+2026-07-02T18:58:35.998+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:58:35.998+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.service.UserLoanService              : 查询用户申请总数请求
+2026-07-02T18:58:35.999+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:58:35.999+08:00  INFO 80109 --- [http-nio-8080-exec-4] c.g.service.UserLoanService              : 查询成功
+2026-07-02T18:58:35.999+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.service.UserLoanService              : 查询所有贷款产品成功
+2026-07-02T18:58:35.999+08:00  INFO 80109 --- [http-nio-8080-exec-10] c.g.service.UserLoanService              : 查询所有贷款产品成功
+2026-07-02T18:58:36.808+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:58:36.809+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T18:58:36.811+08:00  INFO 80109 --- [http-nio-8080-exec-3] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T18:58:59.336+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:59:23.361+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:59:23.361+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:59:23.363+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.service.UserLoanService              : 进行个人历史申请查询请求
+2026-07-02T18:59:23.363+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.service.UserLoanService              : 进行个人历史申请查询请求
+2026-07-02T18:59:23.363+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.service.UserLoanService              : 历史申请记录查询成功
+2026-07-02T18:59:23.363+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.service.UserLoanService              : 历史申请记录查询成功
+2026-07-02T18:59:24.538+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T18:59:24.596+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.service.UserLoanService              : 进行查询还款计划申请
+2026-07-02T18:59:24.598+08:00  INFO 80109 --- [http-nio-8080-exec-8] c.g.service.UserLoanService              : 查询还款计划成功
+2026-07-02T19:00:22.457+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T19:00:22.457+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T19:00:22.457+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T19:00:22.457+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T19:00:22.459+08:00  INFO 80109 --- [http-nio-8080-exec-2] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T19:00:22.459+08:00  INFO 80109 --- [http-nio-8080-exec-1] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T19:00:22.464+08:00  INFO 80109 --- [http-nio-8080-exec-9] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T19:00:22.465+08:00  INFO 80109 --- [http-nio-8080-exec-7] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T19:00:23.255+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T19:00:23.255+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 16
+2026-07-02T19:00:23.255+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T19:00:23.255+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.goldnexusbackend.service.UserService   : 进行返回用户信息请求
+2026-07-02T19:00:23.257+08:00  INFO 80109 --- [http-nio-8080-exec-6] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T19:00:23.257+08:00  INFO 80109 --- [http-nio-8080-exec-5] c.goldnexusbackend.service.UserService   : 返回用户信息成功
+2026-07-02T19:16:20.545+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m39s317ms).
+2026-07-02T19:33:37.034+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m16s489ms).
+2026-07-02T19:54:56.909+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m19s875ms).
+2026-07-02T20:16:05.849+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m8s939ms).
+2026-07-02T20:36:54.196+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m48s348ms).
+2026-07-02T20:57:42.759+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m48s562ms).
+2026-07-02T21:08:25.139+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m42s381ms).
+2026-07-02T21:39:56.527+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m31s388ms).
+2026-07-02T22:00:46.901+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m50s374ms).
+2026-07-02T22:21:37.061+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m50s159ms).
+2026-07-02T22:51:12.930+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m35s870ms).
+2026-07-02T23:12:03.131+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m50s201ms).
+2026-07-02T23:32:53.146+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m50s15ms).
+2026-07-02T23:52:42.341+08:00  WARN 80109 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m49s195ms).

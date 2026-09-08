@@ -1,0 +1,41 @@
+server:
+  port: 8080   # 网关对外端口，与原单体保持一致，前端无需改动
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848   # Nacos 服务端地址
+    gateway:
+      server:
+        webflux:
+          # 全局跨域配置，等价于原单体的 CORS 放行策略
+          globalcors:
+            add-to-simple-url-handler-mapping: true
+            cors-configurations:
+              '[/**]':
+                allowed-origin-patterns: "*"
+                allowed-methods: "*"
+                allowed-headers: "*"
+                allow-credentials: true
+                max-age: 3600
+          routes:
+            # ---------- 用户服务 ----------
+            - id: user-service
+              uri: lb://user-service
+              predicates:
+                - Path=/goldnexus/user/register,/goldnexus/user/login,/goldnexus/user/updateInfo,/goldnexus/user/modifyPassword,/goldnexus/user/userInfo,/goldnexus/user/authentication,/goldnexus/user/score,/goldnexus/user/faceRegister,/goldnexus/user/faceVerify,/goldnexus/user/test,/goldnexus/admin/register,/goldnexus/admin/login,/goldnexus/admin/selectAllUsers,/goldnexus/admin/selectUserById,/goldnexus/admin/selectUserByName
+
+            # ---------- 贷款服务 ----------
+            - id: loan-service
+              uri: lb://loan-service
+              predicates:
+                - Path=/goldnexus/user/products,/goldnexus/user/loanApply,/goldnexus/user/recordApplication,/goldnexus/user/repayPlans,/goldnexus/user/applicationCount,/goldnexus/user/repay,/goldnexus/admin/allLoanApplication,/goldnexus/admin/selectLoanApplicationById,/goldnexus/admin/selectLoanApplicationByName,/goldnexus/admin/checkAllApplication,/goldnexus/admin/checkApplication,/goldnexus/admin/check,/goldnexus/admin/repaymentPlan,/goldnexus/admin/updateProduct,/goldnexus/admin/deleteProduct,/goldnexus/admin/selectAllProducts,/goldnexus/admin/selectProductById
+
+            # ---------- 内容服务 ----------
+            - id: content-service
+              uri: lb://content-service
+              predicates:
+                - Path=/goldnexus/user/getArticles,/goldnexus/user/getArticleDetail,/goldnexus/user/aiChat/send,/goldnexus/user/aiChat/history,/goldnexus/user/cs/send,/goldnexus/user/cs/history,/goldnexus/admin/addArticle,/goldnexus/admin/updateArticle,/goldnexus/admin/deleteArticle,/goldnexus/admin/selectAllArticles,/goldnexus/admin/selectArticleDetail,/goldnexus/admin/cs/userList,/goldnexus/admin/cs/history,/goldnexus/admin/cs/send,/goldnexus/admin/getData

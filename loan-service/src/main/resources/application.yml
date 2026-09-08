@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: loan-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    url: jdbc:mysql://localhost:3306/goldnexus
+    username: root
+    password: 05240314lzx
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+jwt:
+  secret: nihao123321
+  expiration: 86400000
+
+# 贷款服务所有接口均需登录，无匿名接口（不配置 security.permit-all，默认全部鉴权）

@@ -1,0 +1,109 @@
+import com.goldnexusbackend.entity.LoanApplicant
+
+rule "未成年人禁止贷款"
+when
+    $loan : LoanApplicant(age < 18)
+then
+    $loan.setApproved(false);
+    $loan.setRejectReason("未满18周岁，不允许借贷");
+    update($loan);
+end
+
+
+rule "超过60岁禁止贷款"
+when
+    $loan : LoanApplicant(age > 60)
+then
+    $loan.setApproved(false);
+    $loan.setRejectReason("超过60周岁，不允许借贷");
+    update($loan);
+end
+
+
+rule "未实名认证"
+when
+    $loan : LoanApplicant(verified == false)
+then
+    $loan.setApproved(false);
+    $loan.setRejectReason("请先完成实名认证");
+    update($loan);
+end
+
+
+rule "信用分过低"
+when
+    $loan : LoanApplicant(creditScore < 550)
+then
+    $loan.setApproved(false);
+    $loan.setRejectReason("信用评分过低");
+    update($loan);
+end
+
+
+rule "存在逾期记录"
+when
+    $loan : LoanApplicant(overdue == true)
+then
+    $loan.setApproved(false);
+    $loan.setRejectReason("存在逾期记录，不允许借贷");
+    update($loan);
+end
+
+
+rule "失信黑名单"
+when
+    $loan : LoanApplicant(blackList == true)
+then
+    $loan.setApproved(false);
+    $loan.setRejectReason("失信人员禁止借贷");
+    update($loan);
+end
+
+
+rule "收入不足"
+when
+    $loan : LoanApplicant(monthlyIncome < 3000)
+then
+    $loan.setApproved(false);
+    $loan.setRejectReason("月收入不足3000元");
+    update($loan);
+end
+
+
+rule "贷款金额过高"
+when
+    $loan : LoanApplicant(
+        loanAmount > monthlyIncome * 36
+    )
+then
+    $loan.setApproved(false);
+    $loan.setRejectReason("贷款金额超过收入允许范围");
+    update($loan);
+end
+
+
+rule "无稳定工作"
+when
+    $loan : LoanApplicant(employed == false)
+then
+    $loan.setApproved(false);
+    $loan.setRejectReason("暂无稳定工作，不允许借贷");
+    update($loan);
+end
+
+
+rule "优质客户快速审批"
+when
+    $loan : LoanApplicant(
+        age >= 22,
+        age <= 45,
+        verified == true,
+        overdue == false,
+        blackList == false,
+        creditScore >= 750,
+        monthlyIncome >= 10000,
+        employed == true
+    )
+then
+    System.out.println("优质客户，进入快速审批通道");
+end

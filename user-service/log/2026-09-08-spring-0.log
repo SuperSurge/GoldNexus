@@ -1,0 +1,118 @@
+2026-09-08T20:47:41.646+08:00  INFO 36660 --- [user-service] [main] c.g.UserServiceApplication               : Starting UserServiceApplication v0.0.1-SNAPSHOT using Java 21.0.10 with PID 36660 (/Users/surge/temp/GoldNexusBackend/user-service/target/user-service-0.0.1-SNAPSHOT.jar started by surge in /Users/surge/temp/GoldNexusBackend/user-service)
+2026-09-08T20:47:41.647+08:00  INFO 36660 --- [user-service] [main] c.g.UserServiceApplication               : No active profile set, falling back to 1 default profile: "default"
+2026-09-08T20:47:41.973+08:00  INFO 36660 --- [user-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=391834ab-1add-311e-be3a-07b9c8637cfc
+2026-09-08T20:47:42.078+08:00  INFO 36660 --- [user-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-09-08T20:47:42.084+08:00  INFO 36660 --- [user-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-08T20:47:42.084+08:00  INFO 36660 --- [user-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-09-08T20:47:42.095+08:00  INFO 36660 --- [user-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-08T20:47:42.095+08:00  INFO 36660 --- [user-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 434 ms
+2026-09-08T20:47:42.281+08:00  INFO 36660 --- [user-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-09-08T20:47:43.358+08:00  INFO 36660 --- [user-service] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-09-08T20:47:45.100+08:00  INFO 36660 --- [user-service] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-09-08T20:47:45.143+08:00  INFO 36660 --- [user-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-09-08T20:47:45.154+08:00  INFO 36660 --- [user-service] [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2026-09-08T20:47:45.155+08:00  INFO 36660 --- [user-service] [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2026-09-08T20:47:45.155+08:00  INFO 36660 --- [user-service] [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2026-09-08T20:47:45.165+08:00  INFO 36660 --- [user-service] [Thread-4] c.a.n.c.a.r.identify.CredentialWatcher   : null No credential found
+2026-09-08T20:47:45.186+08:00  INFO 36660 --- [user-service] [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-09-08T20:47:45.186+08:00  INFO 36660 --- [user-service] [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-09-08T20:47:45.417+08:00  INFO 36660 --- [user-service] [main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to get current node abilities...
+2026-09-08T20:47:45.417+08:00  INFO 36660 --- [user-service] [main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2026-09-08T20:47:45.418+08:00  INFO 36660 --- [user-service] [main] c.a.n.c.a.AbstractAbilityControlManager  : Initialize current abilities finish...
+2026-09-08T20:47:45.418+08:00  INFO 36660 --- [user-service] [main] c.a.n.c.a.d.NacosAbilityManagerHolder    : [AbilityControlManager] Successfully initialize AbilityControlManager
+2026-09-08T20:47:45.459+08:00  INFO 36660 --- [user-service] [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 113.54.253.196:8081 register finished
+2026-09-08T20:47:46.465+08:00  INFO 36660 --- [user-service] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-09-08T20:47:46.494+08:00  INFO 36660 --- [user-service] [main] c.g.UserServiceApplication               : Started UserServiceApplication in 6.107 seconds (process running for 6.302)
+2026-09-08T20:49:12.368+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-08T20:49:12.368+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-08T20:49:12.369+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-08T20:49:12.388+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-08T20:49:12.571+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@109e56ea
+2026-09-08T20:49:12.571+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-08T20:49:12.574+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-1] c.goldnexusbackend.service.UserService   : 用户进行登录请求
+2026-09-08T20:49:12.606+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-1] c.goldnexusbackend.service.UserService   : 用户名不存在
+2026-09-08T20:49:12.632+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-3] c.g.config.SecurityConfiguration         : 已拦截未登录请求
+2026-09-08T20:49:12.632+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-3] c.g.config.SecurityConfiguration         : Full authentication is required to access this resource
+2026-09-08T20:50:46.277+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-2] c.goldnexusbackend.service.UserService   : 用户进行登录请求
+2026-09-08T20:50:46.278+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-2] c.goldnexusbackend.service.UserService   : 用户名不存在
+2026-09-08T20:51:38.159+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-6] c.goldnexusbackend.service.UserService   : 用户进行登录请求
+2026-09-08T20:51:38.160+08:00  INFO 36660 --- [user-service] [http-nio-8081-exec-6] c.goldnexusbackend.service.UserService   : 用户名不存在
+2026-09-08T21:06:03.255+08:00  INFO 36660 --- [user-service] [Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2026-09-08T21:06:03.256+08:00  INFO 36660 --- [user-service] [Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Completed destruction of Publisher
+2026-09-08T21:06:03.254+08:00  INFO 36660 --- [user-service] [Thread-6] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2026-09-08T21:06:03.257+08:00  INFO 36660 --- [user-service] [Thread-16] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2026-09-08T21:06:03.258+08:00  INFO 36660 --- [user-service] [Thread-16] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Completed destruction of HttpClient
+2026-09-08T21:06:03.258+08:00  INFO 36660 --- [user-service] [Thread-6] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Completed destruction of ThreadPool
+2026-09-08T21:06:03.259+08:00  INFO 36660 --- [user-service] [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2026-09-08T21:06:03.257+08:00 ERROR 36660 --- [user-service] [nacos.publisher-com.alibaba.nacos.common.ability.AbstractAbilityControlManager$AbilityUpdateEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.257+08:00 ERROR 36660 --- [user-service] [nacos.publisher-com.alibaba.nacos.client.naming.event.NamingFuzzyWatchLoadEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.257+08:00 ERROR 36660 --- [user-service] [nacos.publisher-com.alibaba.nacos.client.naming.event.NamingFuzzyWatchNotifyEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.257+08:00 ERROR 36660 --- [user-service] [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.257+08:00 ERROR 36660 --- [user-service] [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.270+08:00  INFO 36660 --- [user-service] [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2026-09-08T21:06:03.274+08:00 ERROR 36660 --- [user-service] [SpringApplicationShutdownHook] c.a.c.n.r.NacosGracefulShutdownDelegate  : Error occurred while performing Nacos client graceful shutdown
+
+java.lang.NullPointerException: Cannot read field "sharePublisher" because "com.alibaba.nacos.common.notify.NotifyCenter.INSTANCE" is null
+	at com.alibaba.nacos.common.notify.NotifyCenter.deregisterSubscriber(NotifyCenter.java:242) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.shutdown(NamingGrpcClientProxy.java:537) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.shutdown(NamingClientProxyDelegate.java:212) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.shutDown(NacosNamingService.java:637) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.cloud.nacos.NacosServiceManager.nacosServiceShutDown(NacosServiceManager.java:117) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.close(NacosServiceRegistry.java:120) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.stop(AbstractAutoServiceRegistration.java:311) ~[spring-cloud-commons-4.3.0.jar!/:4.3.0]
+	at com.alibaba.cloud.nacos.registry.NacosGracefulShutdownDelegate.doGracefulShutdown(NacosGracefulShutdownDelegate.java:69) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at com.alibaba.cloud.nacos.registry.NacosGracefulShutdownDelegate.onApplicationEvent(NacosGracefulShutdownDelegate.java:64) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at com.alibaba.cloud.nacos.registry.NacosGracefulShutdownDelegate.onApplicationEvent(NacosGracefulShutdownDelegate.java:34) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1166) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.9.jar!/:3.5.9]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1129) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147) ~[spring-boot-3.5.9.jar!/:3.5.9]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.5.9.jar!/:3.5.9]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-09-08T21:06:03.281+08:00  INFO 36660 --- [user-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-08T21:06:03.285+08:00  INFO 36660 --- [user-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-09-08T21:06:03.288+08:00  WARN 36660 --- [user-service] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'nacosServiceRegistry' propagated an exception: java.lang.NullPointerException: Cannot read field "sharePublisher" because "com.alibaba.nacos.common.notify.NotifyCenter.INSTANCE" is null
+2026-09-08T21:06:03.289+08:00  INFO 36660 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-08T21:06:03.292+08:00  INFO 36660 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

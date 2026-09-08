@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service   # 服务名，网关通过 lb://user-service 发现并转发
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    url: jdbc:mysql://localhost:3306/goldnexus
+    username: root
+    password: 05240314lzx
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+jwt:
+  secret: nihao123321
+  expiration: 86400000
+
+# 本服务允许匿名访问的接口（无需登录）
+security:
+  permit-all: /goldnexus/user/register,/goldnexus/user/login,/goldnexus/admin/register,/goldnexus/admin/login

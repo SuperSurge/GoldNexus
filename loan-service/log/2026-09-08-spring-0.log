@@ -1,0 +1,119 @@
+2026-09-08T20:48:01.767+08:00  INFO 37442 --- [loan-service] [main] c.g.LoanServiceApplication               : Starting LoanServiceApplication v0.0.1-SNAPSHOT using Java 21.0.10 with PID 37442 (/Users/surge/temp/GoldNexusBackend/loan-service/target/loan-service-0.0.1-SNAPSHOT.jar started by surge in /Users/surge/temp/GoldNexusBackend/loan-service)
+2026-09-08T20:48:01.768+08:00  INFO 37442 --- [loan-service] [main] c.g.LoanServiceApplication               : No active profile set, falling back to 1 default profile: "default"
+2026-09-08T20:48:02.097+08:00  INFO 37442 --- [loan-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5d8fafa7-1d10-36fc-8224-8d9ae91f5ae9
+2026-09-08T20:48:02.209+08:00  INFO 37442 --- [loan-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-09-08T20:48:02.214+08:00  INFO 37442 --- [loan-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-08T20:48:02.215+08:00  INFO 37442 --- [loan-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-09-08T20:48:02.225+08:00  INFO 37442 --- [loan-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-08T20:48:02.225+08:00  INFO 37442 --- [loan-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 443 ms
+2026-09-08T20:48:02.472+08:00  WARN 37442 --- [loan-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3a917e36-5151-4637-8920-6264c882a7ae
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-08T20:48:02.474+08:00  INFO 37442 --- [loan-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-08T20:48:02.597+08:00  INFO 37442 --- [loan-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2026-09-08T20:48:02.603+08:00  INFO 37442 --- [loan-service] [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2026-09-08T20:48:02.604+08:00  INFO 37442 --- [loan-service] [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2026-09-08T20:48:02.604+08:00  INFO 37442 --- [loan-service] [main] c.a.nacos.client.logging.NacosLogging    : Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2026-09-08T20:48:02.626+08:00  INFO 37442 --- [loan-service] [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-09-08T20:48:02.626+08:00  INFO 37442 --- [loan-service] [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2026-09-08T20:48:02.852+08:00  INFO 37442 --- [loan-service] [main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to get current node abilities...
+2026-09-08T20:48:02.853+08:00  INFO 37442 --- [loan-service] [main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2026-09-08T20:48:02.853+08:00  INFO 37442 --- [loan-service] [main] c.a.n.c.a.AbstractAbilityControlManager  : Initialize current abilities finish...
+2026-09-08T20:48:02.853+08:00  INFO 37442 --- [loan-service] [main] c.a.n.c.a.d.NacosAbilityManagerHolder    : [AbilityControlManager] Successfully initialize AbilityControlManager
+2026-09-08T20:48:02.868+08:00  INFO 37442 --- [loan-service] [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP loan-service 113.54.253.196:8082 register finished
+2026-09-08T20:48:02.877+08:00  INFO 37442 --- [loan-service] [main] c.g.LoanServiceApplication               : Started LoanServiceApplication in 1.321 seconds (process running for 1.516)
+2026-09-08T20:49:28.856+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-08T20:49:28.857+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-08T20:49:28.857+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-09-08T20:49:28.865+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-1] c.g.config.SecurityConfiguration         : 已拦截未登录请求
+2026-09-08T20:49:28.865+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-1] c.g.config.SecurityConfiguration         : Full authentication is required to access this resource
+2026-09-08T20:51:38.187+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-3] c.g.config.SecurityConfiguration         : 已拦截未登录请求
+2026-09-08T20:51:38.187+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-3] c.g.config.SecurityConfiguration         : Full authentication is required to access this resource
+2026-09-08T20:52:30.508+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-4] c.g.filter.JwtAuthenticationFilter       : 当前请求用户--权限： USER id: 1
+2026-09-08T20:52:30.515+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-08T20:52:30.654+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cf51708
+2026-09-08T20:52:30.654+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-08T20:52:30.657+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-4] c.g.service.UserLoanService              : 查询所有贷款产品
+2026-09-08T20:52:30.678+08:00  INFO 37442 --- [loan-service] [http-nio-8082-exec-4] c.g.service.UserLoanService              : 查询所有贷款产品成功
+2026-09-08T21:06:03.255+08:00  INFO 37442 --- [loan-service] [Thread-15] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2026-09-08T21:06:03.256+08:00  INFO 37442 --- [loan-service] [Thread-11] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2026-09-08T21:06:03.256+08:00  INFO 37442 --- [loan-service] [Thread-11] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Completed destruction of Publisher
+2026-09-08T21:06:03.257+08:00  INFO 37442 --- [loan-service] [Thread-5] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Start destroying ThreadPool
+2026-09-08T21:06:03.258+08:00  INFO 37442 --- [loan-service] [Thread-15] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Completed destruction of HttpClient
+2026-09-08T21:06:03.261+08:00  INFO 37442 --- [loan-service] [Thread-5] c.a.n.common.executor.ThreadPoolManager  : [ThreadPoolManager] Completed destruction of ThreadPool
+2026-09-08T21:06:03.261+08:00  INFO 37442 --- [loan-service] [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2026-09-08T21:06:03.257+08:00 ERROR 37442 --- [loan-service] [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.257+08:00 ERROR 37442 --- [loan-service] [nacos.publisher-com.alibaba.nacos.client.naming.event.NamingFuzzyWatchNotifyEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.257+08:00 ERROR 37442 --- [loan-service] [nacos.publisher-com.alibaba.nacos.common.ability.AbstractAbilityControlManager$AbilityUpdateEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.257+08:00 ERROR 37442 --- [loan-service] [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.257+08:00 ERROR 37442 --- [loan-service] [nacos.publisher-com.alibaba.nacos.client.naming.event.NamingFuzzyWatchLoadEvent] c.a.nacos.common.notify.NotifyCenter     : Event listener exception : 
+
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1761) ~[na:na]
+	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420) ~[na:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:111) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95) ~[nacos-client-3.0.3.jar!/:na]
+
+2026-09-08T21:06:03.270+08:00  INFO 37442 --- [loan-service] [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2026-09-08T21:06:03.275+08:00 ERROR 37442 --- [loan-service] [SpringApplicationShutdownHook] c.a.c.n.r.NacosGracefulShutdownDelegate  : Error occurred while performing Nacos client graceful shutdown
+
+java.lang.NullPointerException: Cannot read field "sharePublisher" because "com.alibaba.nacos.common.notify.NotifyCenter.INSTANCE" is null
+	at com.alibaba.nacos.common.notify.NotifyCenter.deregisterSubscriber(NotifyCenter.java:242) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.shutdown(NamingGrpcClientProxy.java:537) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.shutdown(NamingClientProxyDelegate.java:212) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.shutDown(NacosNamingService.java:637) ~[nacos-client-3.0.3.jar!/:na]
+	at com.alibaba.cloud.nacos.NacosServiceManager.nacosServiceShutDown(NacosServiceManager.java:117) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.close(NacosServiceRegistry.java:120) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.stop(AbstractAutoServiceRegistration.java:311) ~[spring-cloud-commons-4.3.0.jar!/:4.3.0]
+	at com.alibaba.cloud.nacos.registry.NacosGracefulShutdownDelegate.doGracefulShutdown(NacosGracefulShutdownDelegate.java:69) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at com.alibaba.cloud.nacos.registry.NacosGracefulShutdownDelegate.onApplicationEvent(NacosGracefulShutdownDelegate.java:64) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at com.alibaba.cloud.nacos.registry.NacosGracefulShutdownDelegate.onApplicationEvent(NacosGracefulShutdownDelegate.java:34) ~[spring-cloud-starter-alibaba-nacos-discovery-2025.0.0.0.jar!/:2025.0.0.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1166) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.9.jar!/:3.5.9]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1129) ~[spring-context-6.2.15.jar!/:6.2.15]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147) ~[spring-boot-3.5.9.jar!/:3.5.9]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.5.9.jar!/:3.5.9]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-09-08T21:06:03.278+08:00  INFO 37442 --- [loan-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-08T21:06:03.282+08:00  INFO 37442 --- [loan-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-09-08T21:06:03.286+08:00  WARN 37442 --- [loan-service] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'nacosServiceRegistry' propagated an exception: java.lang.NullPointerException: Cannot read field "sharePublisher" because "com.alibaba.nacos.common.notify.NotifyCenter.INSTANCE" is null
+2026-09-08T21:06:03.287+08:00  INFO 37442 --- [loan-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-08T21:06:03.289+08:00  INFO 37442 --- [loan-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
