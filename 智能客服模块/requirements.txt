@@ -1,0 +1,20 @@
+# ===== P0/P1 必需 =====
+fastapi
+uvicorn[standard]
+sse-starlette
+pydantic
+pydantic-settings
+python-dotenv
+langchain
+langchain-openai
+
+# ===== P2 RAG 再装（会连带下载 torch / chromadb，体积大）=====
+langchain-chroma
+langchain-text-splitters
+chromadb
+sentence-transformers      # 本地 embedding（bge-large-zh-v1.5）
+# reranker 用 sentence-transformers 的 CrossEncoder 加载 bge-reranker-v2-m3，
+# 无需额外装 FlagEmbedding（若坚持用 FlagEmbedding，见 README「切换 reranker 实现」）
+
+# ===== P6 评估（可选，规则打分不依赖；LLM 裁判复用 langchain-openai）=====
+# 无额外依赖

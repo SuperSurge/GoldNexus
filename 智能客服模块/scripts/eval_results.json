@@ -1,0 +1,175 @@
+{
+  "summary": {
+    "tool_accuracy": 1.0,
+    "args_accuracy": 1.0,
+    "answer_accuracy": 1.0,
+    "avg_judge_score": 5.0,
+    "hallucination_count": 0,
+    "total_latency_s": 31.27
+  },
+  "cases": [
+    {
+      "id": 1,
+      "name": "查产品",
+      "question": "我想借 30000 元，分 12 期，征信良好，有什么产品？",
+      "tool_calls": [
+        {
+          "name": "search_loan_products",
+          "args": {
+            "amount": 30000,
+            "term_months": 12,
+            "credit_level": "good"
+          }
+        }
+      ],
+      "answer": "您好，根据您的条件（借款 30000 元、分 12 期、征信良好），平台为您匹配到以下 4 款产品（模拟数据，实际以平台审批为准）：\n\n| 产品 | 额度范围 | 年化利率 | 可选期数 |\n|------|----------|----------|----------|\n| 金纽贷（平台自营） | 1000~100000 元 | 6.0%~14.8% | 3/6/9/12/24 期 |\n| 奇富科技·周转贷 | 1000~50000 元 | 7.2%~14.8% | 3/6/9/12/24 期 |\n| 乐信·分期乐 | 1000~80000 元 | 6.0%~14.8% | 3/6/12/24 期 |\n| 度小满·有钱花 | 5000~200000 元 | 6.5%~12.0% | 6/12/24 期 |\n\n以上 4 款均支持 12 期，且额度上限都能覆盖 30000 元。\n\n需要提醒您：\n- 具体能否批到 30000 元、以及最终执行的利率，需以各平台实际审批结果为准；\n- 征信良好有助于提高通过率和获得较低利率，但不代表百分百通过。\n\n如果您想了解某款产品的**月供或总利息**，我可以帮您试算，请告诉我您倾向哪一款？",
+      "tool_ok": true,
+      "args_ok": true,
+      "answer_ok": true,
+      "judge": {
+        "hallucination": false,
+        "hallucination_reason": "回答中的产品、额度、利率、期数均与工具返回结果一致，未编造月供或额外数字。",
+        "relevant": true,
+        "score": 5,
+        "comment": "回答准确复述工具结果，并合理提示审批不确定性，切题且无越界内容。"
+      },
+      "latency": 16.65
+    },
+    {
+      "id": 2,
+      "name": "算月供（等额本息）",
+      "question": "借 30000 元，分 12 期，年利率 12%，等额本息，帮我算每月还多少",
+      "tool_calls": [
+        {
+          "name": "calculate_repayment",
+          "args": {
+            "principal": 30000,
+            "annual_rate": 12,
+            "months": 12,
+            "method": "equal_installment"
+          }
+        }
+      ],
+      "answer": "根据等额本息的计算结果，您这笔借款的情况如下：\n\n- **借款本金**：30,000.00 元\n- **分期期数**：12 期\n- **年化利率**：12.0%\n- **每月月供**：**2,665.46 元**\n- **总利息**：1,985.56 元\n- **还款总额**：31,985.56 元\n\n也就是说，您每月需还款约 **2,665.46 元**，12 期下来总共支付利息约 1,985.56 元。\n\n温馨提示：以上为按您提供条件试算的结果，实际利率、费用及月供请以平台最终审批为准。如需了解具体产品，我可以帮您查询。",
+      "tool_ok": true,
+      "args_ok": true,
+      "answer_ok": true,
+      "judge": {
+        "hallucination": false,
+        "hallucination_reason": "所有数字均与工具返回结果一致，无编造内容。",
+        "relevant": true,
+        "score": 5,
+        "comment": "回答准确复述工具计算结果，并附合规提示，切题且质量高。"
+      },
+      "latency": 2.7
+    },
+    {
+      "id": 3,
+      "name": "查订单进度",
+      "question": "帮我查一下订单 GX20240901001 的进度",
+      "tool_calls": [
+        {
+          "name": "query_loan_status",
+          "args": {
+            "order_id": "GX20240901001"
+          }
+        }
+      ],
+      "answer": "您好，根据平台订单系统查询结果，订单 **GX20240901001** 当前状态为：**还款中**。\n\n如需了解该订单的剩余期数、每期应还金额或还款计划等更详细信息，建议您提供更多需求，或转接人工客服为您进一步核实。请问还有什么可以帮您？",
+      "tool_ok": true,
+      "args_ok": true,
+      "answer_ok": true,
+      "judge": {
+        "hallucination": false,
+        "hallucination_reason": "回答仅复述工具返回的订单状态「还款中」，未编造月供、额度、利率等任何数字或事实。",
+        "relevant": true,
+        "relevant_score": 5,
+        "score": 5,
+        "comment": "回答准确复述查询结果，并礼貌引导用户补充需求或转人工，切题且无编造。"
+      },
+      "latency": 1.84
+    },
+    {
+      "id": 4,
+      "name": "政策类 RAG",
+      "question": "如果逾期了会怎么样？",
+      "tool_calls": [],
+      "answer": "您好，关于逾期问题，根据平台规则，我为您说明如下：\n\n**逾期可能产生的影响：**\n\n1. **产生逾期费用**：逾期后通常会产生罚息或违约金，具体费率以您的借款合同约定为准。\n\n2. **影响个人征信**：如您的借款已接入征信系统，逾期记录可能会上报至征信机构，对您后续的贷款、信用卡申请等产生不利影响。\n\n3. **催收提醒**：平台会通过短信、电话等方式进行还款提醒。\n\n4. **可能影响后续借款**：逾期记录可能导致您在平台的额度被冻结或降低，影响再次借款。\n\n**建议：**\n- 如遇还款困难，建议尽早联系客服说明情况，看是否可以协商还款方案；\n- 尽量在还款日前保证账户余额充足，避免因疏忽导致逾期。\n\n具体的逾期费用标准、宽限期等细节，**请以您的实际借款合同和平台审批为准**。如需了解您个人订单的具体情况，可以告诉我订单号，我帮您查询；也可以为您转接人工客服进一步核实。\n\n请问还有什么可以帮您？",
+      "tool_ok": true,
+      "args_ok": null,
+      "answer_ok": true,
+      "judge": {
+        "hallucination": false,
+        "hallucination_reason": "回答仅给出通用逾期影响说明，未编造具体费率、月供、额度或利率等数字，且明确以合同为准。",
+        "relevant": true,
+        "score": 5,
+        "comment": "回答切题、结构清晰，涵盖逾期费用、征信、催收、后续借款等常见影响，并给出合理建议和转人工选项，未越界或编造具体数据。"
+      },
+      "latency": 4.71
+    },
+    {
+      "id": 5,
+      "name": "情绪投诉转人工",
+      "question": "我要投诉你们，马上给我转人工！",
+      "tool_calls": [
+        {
+          "name": "transfer_to_human",
+          "args": {
+            "reason": "用户明确要求投诉并转人工，情绪较激动"
+          }
+        }
+      ],
+      "answer": "已为您转接人工客服，人工坐席将尽快接入，请稍候。",
+      "tool_ok": true,
+      "args_ok": null,
+      "answer_ok": true,
+      "judge": {
+        "hallucination": false,
+        "hallucination_reason": "回答仅复述工具返回的转人工结果，未编造任何数字或事实。",
+        "relevant": true,
+        "relevant_reason": "用户要求投诉并转人工，属于客服合理诉求，Agent 依工具结果如实告知，未越界。",
+        "score": 5,
+        "comment": "准确转达转人工结果，无编造，切题且简洁。"
+      },
+      "latency": 0.63
+    },
+    {
+      "id": 6,
+      "name": "兜底聊天",
+      "question": "你好，你是谁？",
+      "tool_calls": [],
+      "answer": "你好！我是金纽贷（GoldNexus）的智能客服，很高兴为你服务。\n\n我可以帮你解答贷款相关的问题，比如：\n- 查询贷款产品（额度、利率、期限等）\n- 试算月供、利息\n- 查询你的申请进度或订单状态\n- 解答平台规则相关疑问\n\n请问有什么可以帮到你的吗？",
+      "tool_ok": true,
+      "args_ok": null,
+      "answer_ok": true,
+      "judge": {
+        "hallucination": false,
+        "hallucination_reason": "仅自我介绍并列举可提供的服务类型，未给出任何具体额度、利率或月供数字。",
+        "relevant": true,
+        "relevant_score": 5,
+        "score": 5,
+        "comment": "回答切题、礼貌且未编造任何数据，符合贷款智能客服的定位。"
+      },
+      "latency": 2.48
+    },
+    {
+      "id": 7,
+      "name": "越界请求",
+      "question": "帮我写一段 Python 爬虫代码",
+      "tool_calls": [],
+      "answer": "您好，我是金纽贷的智能客服，只负责贷款相关的咨询，没办法帮您写代码哦。\n\n如果您有贷款方面的需求，比如想了解可申请的产品、额度、利率、期限，或者想算一下月供、查询申请进度，我都可以帮您。请问有什么可以帮您的吗？",
+      "tool_ok": true,
+      "args_ok": null,
+      "answer_ok": true,
+      "judge": {
+        "hallucination": false,
+        "hallucination_reason": "回答未涉及任何具体数字或事实，仅作身份说明和礼貌拒绝。",
+        "relevant": true,
+        "relevant_score": 5,
+        "score": 5,
+        "comment": "礼貌拒绝越界请求并引导回贷款话题，无编造，表现优秀。"
+      },
+      "latency": 2.25
+    }
+  ]
+}
