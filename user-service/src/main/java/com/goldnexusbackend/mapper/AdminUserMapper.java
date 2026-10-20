@@ -16,6 +16,7 @@ public interface AdminUserMapper {
     User selectUserById(int id);
 
 
-    @Select("select * from user where name = #{name}")
+    // 按登录名(username)查询；注意 user 表的 name 是实名、username 是登录名
+    @Select("select * from user where username = #{name}")
     User selectUserByName(String name);
 }

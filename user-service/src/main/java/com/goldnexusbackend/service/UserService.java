@@ -13,6 +13,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
@@ -23,6 +27,7 @@ public class UserService implements UserDetailsService {
     private final UserMapper userMapper;
     private final JwtUtil jwtUtil;
     private final PasswordEncoder passwordEncoder=new BCryptPasswordEncoder();
+    private final RestTemplate restTemplate;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -76,6 +81,15 @@ public class UserService implements UserDetailsService {
                 res.setMsg("注册成功");
                 res.setData(null);
                 log.info("注册成功");
+                // 注册成功触发积分(REGISTER, 幂等键=userId)
+                try {
+                    User created = userMapper.selectUserByName(vo.getUsername());
+                    if (created != null && created.getId() != null) {
+                        grantPoints("REGISTER", String.valueOf(created.getId()), created.getId(), null);
+                    }
+                } catch (Exception e) {
+                    log.warn("注册积分发放失败(忽略): {}", e.getMessage());
+                }
                 return res;
             }
             else{
@@ -253,7 +267,6 @@ public class UserService implements UserDetailsService {
         }
     }
 
-    @Transactional
     public Res authentication(String realName){
         log.info("实名认证请求");
         CurrentUser currentUser = SecurityContextHelper.getCurrentUser();
@@ -266,11 +279,29 @@ public class UserService implements UserDetailsService {
         }
 
         userMapper.authentication(currentUser.getId(),realName);
+        // 实名认证成功触发积分(REAL_NAME, 幂等键=realname-{userId})
+        grantPoints("REAL_NAME", "realname-" + currentUser.getId(), currentUser.getId(), null);
         System.out.println(realName);
         res.setCode(200);
         res.setMsg("实名认证成功");
         log.info("实名认证成功");
         res.setData(null);
         return res;
+    }
+
+    // 调用积分服务发放(服务间直连, 失败不影响主流程)
+    private void grantPoints(String eventType, String bizNo, Integer userId, Integer points) {
+        try {
+            Map<String, Object> body = new HashMap<>();
+            body.put("eventType", eventType);
+            body.put("bizNo", bizNo);
+            body.put("userId", userId);
+            if (points != null) {
+                body.put("points", points);
+            }
+            restTemplate.postForObject("http://points-service/goldnexus/internal/grant", body, String.class);
+        } catch (Exception e) {
+            log.warn("积分发放调用失败(忽略): {}", e.getMessage());
+        }
     }
 }

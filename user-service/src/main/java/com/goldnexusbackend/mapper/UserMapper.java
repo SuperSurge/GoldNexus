@@ -51,6 +51,7 @@ public interface UserMapper {
     @Update("update user set password=#{password} where username = #{username}")
     int updatePassword(String username, String password);
 
+    // 更新用户资料(不含 name: name 为实名, 仅由下方 authentication 实名认证写入, 防止绕过实名)
     @Update("update user set gender=#{gender},age=#{age}, address=#{address},addressLevel=#{addressLevel},marriage=#{marriage},job=#{job},education=#{education},earnings=#{earnings},property=#{property} where id=#{id}")
     int updateUserInfo(User user);
 

@@ -39,3 +39,9 @@ spring:
               uri: lb://content-service
               predicates:
                 - Path=/goldnexus/user/getArticles,/goldnexus/user/getArticleDetail,/goldnexus/user/aiChat/send,/goldnexus/user/aiChat/history,/goldnexus/user/cs/send,/goldnexus/user/cs/history,/goldnexus/admin/addArticle,/goldnexus/admin/updateArticle,/goldnexus/admin/deleteArticle,/goldnexus/admin/selectAllArticles,/goldnexus/admin/selectArticleDetail,/goldnexus/admin/cs/userList,/goldnexus/admin/cs/history,/goldnexus/admin/cs/send,/goldnexus/admin/getData
+
+            # ---------- 积分服务 ----------
+            - id: points-service
+              uri: lb://points-service
+              predicates:
+                - Path=/goldnexus/points/**,/goldnexus/mall/**,/goldnexus/admin/points/**

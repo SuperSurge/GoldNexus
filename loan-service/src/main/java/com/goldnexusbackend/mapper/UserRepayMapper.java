@@ -17,4 +17,8 @@ public interface UserRepayMapper {
     //全部还完
     @Update("update repayment_plan set paidAmount=#{paidAmount},actualPaymentDate=#{actualPaymentDate},status=1 where planId=#{planId}")
     int repayAllOnce(BigDecimal paidAmount, LocalDate actualPaymentDate, Integer planId);
+
+    //整笔申请全部还清后更新申请状态为已还完
+    @Update("update loan_application set repayStatus = 1 where applicationId = #{applicationId}")
+    int updateRepayStatus(Integer applicationId);
 }

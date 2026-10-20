@@ -452,22 +452,6 @@ public class UserLoanService {
     }
 
 
-    //计算罚息
-    public BigDecimal calculatePenalty(Integer overdueDays, BigDecimal overdueAmount, BigDecimal penaltyRate) {
-        if (overdueDays <= 0 || overdueAmount == null || penaltyRate == null) {
-            return BigDecimal.ZERO;
-        }
-
-        // 假设罚息率是日罚息率
-        BigDecimal dailyPenaltyRate = penaltyRate
-                .divide(BigDecimal.valueOf(100), 10, DECIMAL_ROUNDING);
-
-        return overdueAmount
-                .multiply(dailyPenaltyRate)
-                .multiply(BigDecimal.valueOf(overdueDays))
-                .setScale(DECIMAL_SCALE, DECIMAL_ROUNDING);
-    }
-
     //更新还款状态
     public void updateRepaymentStatus(Repayment repayment, BigDecimal paymentAmount, LocalDate actualPaymentDate) {
         if (repayment == null || paymentAmount == null) {

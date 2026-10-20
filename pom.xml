@@ -25,6 +25,7 @@
 		<module>user-service</module>
 		<module>loan-service</module>
 		<module>content-service</module>
+		<module>points-service</module>
 	</modules>
 
 	<properties>

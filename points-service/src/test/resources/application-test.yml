@@ -1,0 +1,17 @@
+# 集成测试专用配置(激活 profile: test)
+spring:
+  cloud:
+    nacos:
+      discovery:
+        enabled: false   # 测试不注册 Nacos
+    discovery:
+      enabled: false
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:sql/user-schema.sql, classpath:db/schema.sql
+      data-locations: classpath:sql/test-data.sql
+
+# 测试放开单日上限, 便于一次发放足额积分(兑换测试需 500)
+points:
+  daily-limit: 100000

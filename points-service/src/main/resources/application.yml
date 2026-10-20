@@ -1,0 +1,39 @@
+server:
+  port: 8084
+  tomcat:
+    threads:
+      max: 200        # 最大工作线程(应对并发)
+      min-spare: 20   # 最小空闲线程
+    accept-count: 200 # 等待队列长度
+
+spring:
+  application:
+    name: points-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    url: jdbc:mysql://localhost:3306/goldnexus
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:05240314lzx}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 100      # 连接池最大连接数(应对并发)
+      minimum-idle: 20            # 最小空闲连接
+      connection-timeout: 30000   # 获取连接超时(ms)
+
+jwt:
+  secret: nihao123321
+  expiration: 86400000
+
+# 积分服务默认全部需登录；ping 为临时健康检查，放行
+security:
+  permit-all: /goldnexus/points/ping,/goldnexus/internal/grant
+
+# 积分业务参数(可配)
+points:
+  daily-limit: 100      # 单日发放上限
+  expire-days: 365      # 积分有效期(天)
+  balance-cap: 500000   # 账户余额上限
+  min-points: 100       # 兑换起付线
