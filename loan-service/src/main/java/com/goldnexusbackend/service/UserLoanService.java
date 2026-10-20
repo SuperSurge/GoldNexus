@@ -8,8 +8,6 @@ import com.goldnexusbackend.mapper.UserMapper;
 import com.goldnexusbackend.utils.SecurityContextHelper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.cglib.core.Local;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -259,7 +257,7 @@ public class UserLoanService {
         if(loanApplication.getApplicationStatus()!=2){
             log.info("该请求审核未通过");
             return 0;
-        };
+        }
 
         Integer applicationId = loanApplication.getApplicationId();
         BigDecimal amount = loanApplication.getAmount();
@@ -340,7 +338,7 @@ public class UserLoanService {
         try {
 
             //转化为月利率
-            BigDecimal monthlyInterestRate=interest.divide(BigDecimal.valueOf(12),10,DECIMAL_SCALE);
+            BigDecimal monthlyInterestRate=interest.divide(BigDecimal.valueOf(12),10,DECIMAL_ROUNDING);
 
             // 等额本息计算公式：每月还款额 = [本金 × 月利率 × (1+月利率)^期数] ÷ [(1+月利率)^期数 - 1]
 
