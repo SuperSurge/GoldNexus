@@ -11,7 +11,8 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/goldnexus
     username: root
-    password: 05240314lzx
+    password: 1111
+    # password: 05240314lzx
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 jwt:

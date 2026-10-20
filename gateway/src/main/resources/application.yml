@@ -26,13 +26,13 @@ spring:
             - id: user-service
               uri: lb://user-service
               predicates:
-                - Path=/goldnexus/user/register,/goldnexus/user/login,/goldnexus/user/updateInfo,/goldnexus/user/modifyPassword,/goldnexus/user/userInfo,/goldnexus/user/authentication,/goldnexus/user/score,/goldnexus/user/faceRegister,/goldnexus/user/faceVerify,/goldnexus/user/test,/goldnexus/admin/register,/goldnexus/admin/login,/goldnexus/admin/selectAllUsers,/goldnexus/admin/selectUserById,/goldnexus/admin/selectUserByName
+                - Path=/goldnexus/user/register,/goldnexus/user/login,/goldnexus/user/updateInfo,/goldnexus/user/modifyPassword,/goldnexus/user/userInfo,/goldnexus/user/authentication,/goldnexus/user/score,/goldnexus/user/faceRegister,/goldnexus/user/faceVerify,/goldnexus/user/test,/goldnexus/admin/register,/goldnexus/admin/login,/goldnexus/admin/selectAllUsers,/goldnexus/admin/selectUserById,/goldnexus/admin/selectUserByName,/goldnexus/user/talentUpload,/goldnexus/user/talentStatus
 
             # ---------- 贷款服务 ----------
             - id: loan-service
               uri: lb://loan-service
               predicates:
-                - Path=/goldnexus/user/products,/goldnexus/user/loanApply,/goldnexus/user/recordApplication,/goldnexus/user/repayPlans,/goldnexus/user/applicationCount,/goldnexus/user/repay,/goldnexus/admin/allLoanApplication,/goldnexus/admin/selectLoanApplicationById,/goldnexus/admin/selectLoanApplicationByName,/goldnexus/admin/checkAllApplication,/goldnexus/admin/checkApplication,/goldnexus/admin/check,/goldnexus/admin/repaymentPlan,/goldnexus/admin/updateProduct,/goldnexus/admin/deleteProduct,/goldnexus/admin/selectAllProducts,/goldnexus/admin/selectProductById
+                - Path=/goldnexus/user/products,/goldnexus/user/loanApply,/goldnexus/user/recordApplication,/goldnexus/user/repayPlans,/goldnexus/user/applicationCount,/goldnexus/user/repay,/goldnexus/admin/allLoanApplication,/goldnexus/admin/selectLoanApplicationById,/goldnexus/admin/selectLoanApplicationByName,/goldnexus/admin/checkAllApplication,/goldnexus/admin/checkApplication,/goldnexus/admin/check,/goldnexus/admin/repaymentPlan,/goldnexus/admin/updateProduct,/goldnexus/admin/deleteProduct,/goldnexus/admin/selectAllProducts,/goldnexus/admin/selectProductById,/goldnexus/user/talentProducts,/goldnexus/user/talentApply,/goldnexus/admin/talentProductUpdate,/goldnexus/admin/talentProductDelete,/goldnexus/admin/talentProductSelectAll,/goldnexus/admin/talentProductSelectById,/goldnexus/admin/talentVerifications
 
             # ---------- 内容服务 ----------
             - id: content-service

@@ -8,11 +8,17 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+        enabled: true
   datasource:
     url: jdbc:mysql://localhost:3306/goldnexus
     username: root
-    password: 05240314lzx
+    password: 1111
+    # password: 05240314lzx
     driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
 
 jwt:
   secret: nihao123321
@@ -21,3 +27,15 @@ jwt:
 # 本服务允许匿名访问的接口（无需登录）
 security:
   permit-all: /goldnexus/user/register,/goldnexus/user/login,/goldnexus/admin/register,/goldnexus/admin/login
+
+# MinIO 对象存储（应届生认证 PDF 上传）
+minio:
+  endpoint: http://127.0.0.1:9000
+  access-key: admin
+  secret-key: minio1111
+  bucket: talent-zone
+
+# 学信网查验适配器（作业演示用 Mock）
+chsi:
+  verify:
+    mock: true

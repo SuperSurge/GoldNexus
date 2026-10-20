@@ -31,3 +31,15 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### 日志文件 ###
+*.log
+derby.log
+log/
+logs/
+
+### 测试产物（认证报告 PDF、测试记录）###
+test-talent-report.pdf
+*.pdf
+测试方法.txt
+测试记录-*.md

@@ -1,6 +1,5 @@
 package com.goldnexusbackend.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,4 +22,10 @@ public class LoanApplication {
     private Integer applicationStatus;
     private Integer repayStatus;
     private String message;
+    /** 产品类型：0普通，1优才 */
+    private Integer productType;
+    /** 期数（优才用户自选） */
+    private Integer term;
+    /** 应届生认证记录ID */
+    private Integer verificationId;
 }

@@ -17,9 +17,9 @@ public interface UserLoanMapper {
     LoanProduct selectLoanProductById(Integer id);
 
     @Insert("insert into loan_application " +
-            "    (productId, name, userId, amount,interestWay, applyTime, useWay, applicationStatus,repayStatus,message)" +
+            "    (productId, name, userId, amount,interestWay, applyTime, useWay, applicationStatus,repayStatus,message, productType, term, verificationId)" +
             "    values \n" +
-            "    (#{productId}, #{name}, #{userId}, #{amount}, #{interestWay}, #{applyTime}, #{useWay}, #{applicationStatus},#{repayStatus},#{message})")
+            "    (#{productId}, #{name}, #{userId}, #{amount}, #{interestWay}, #{applyTime}, #{useWay}, #{applicationStatus},#{repayStatus},#{message}, #{productType}, #{term}, #{verificationId})")
     @Options(useGeneratedKeys = true,keyProperty = "applicationId",keyColumn = "applicationId")
     int insertLoanApplication(LoanApplication loanApplication);
 

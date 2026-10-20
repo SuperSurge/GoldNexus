@@ -1,5 +1,6 @@
 package com.goldnexusbackend.service;
 import com.goldnexusbackend.entity.*;
+import com.goldnexusbackend.mapper.TalentProductMapper;
 import com.goldnexusbackend.mapper.UserLoanMapper;
 import com.goldnexusbackend.mapper.UserPenaltyMapper;
 import lombok.RequiredArgsConstructor;
@@ -17,6 +18,7 @@ import java.util.List;
 public class UserPenaltyService {
     private final UserLoanMapper userLoanMapper;
     private final UserPenaltyMapper userPenaltyMapper;
+    private final TalentProductMapper talentProductMapper;
 
     //检查是否有逾期，计算并更新罚息
     @Scheduled(cron = "0 0 0 * * ?")//每天零点自动执行这个方法检查逾期并计算、更新罚息
@@ -27,8 +29,14 @@ public class UserPenaltyService {
                 continue;
             }
             LoanApplication loanApplication = userPenaltyMapper.selectLoanApplication(single_repayment.getApplicationId());
-            LoanProduct loanProduct = userLoanMapper.selectLoanProductById(loanApplication.getProductId());
-            BigDecimal penalty_rate = loanProduct.getPenalty();//获取对应贷款产品的罚息，该罚息是日利率
+            BigDecimal penalty_rate;
+            if (loanApplication.getProductType() != null && loanApplication.getProductType() == 1) {
+                TalentProduct talentProduct = talentProductMapper.selectById(loanApplication.getProductId());
+                penalty_rate = talentProduct.getPenalty();//获取优才产品罚息（日利率）
+            } else {
+                LoanProduct loanProduct = userLoanMapper.selectLoanProductById(loanApplication.getProductId());
+                penalty_rate = loanProduct.getPenalty();//获取对应贷款产品的罚息，该罚息是日利率
+            }
             single_repayment.setStatus(2);//状态设置为逾期
             long overdue_days = ChronoUnit.DAYS.between(single_repayment.getDueDate(), LocalDate.now());//计算当前日期与原定还款日期之间的天数差
             BigDecimal unpaid_amount = single_repayment.getAmount().subtract(single_repayment.getPaidAmount());//未还金额

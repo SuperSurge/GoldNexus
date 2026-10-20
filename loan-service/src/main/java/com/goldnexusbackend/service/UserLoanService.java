@@ -2,6 +2,7 @@ package com.goldnexusbackend.service;
 
 
 import com.goldnexusbackend.entity.*;
+import com.goldnexusbackend.mapper.TalentProductMapper;
 import com.goldnexusbackend.mapper.UserLoanMapper;
 import com.goldnexusbackend.mapper.UserMapper;
 import com.goldnexusbackend.utils.SecurityContextHelper;
@@ -27,6 +28,7 @@ public class UserLoanService {
 
     private final UserLoanMapper userLoanMapper;
     private final UserMapper userMapper;
+    private final TalentProductMapper talentProductMapper;
     private static final int DECIMAL_SCALE = 2;
     private static final RoundingMode DECIMAL_ROUNDING = RoundingMode.HALF_UP;
 
@@ -85,6 +87,7 @@ public class UserLoanService {
         loanApplication.setUserId(userId);
         loanApplication.setApplyTime(LocalDateTime.now());
         loanApplication.setRepayStatus(0);
+        loanApplication.setProductType(0); // 普通产品
 
         LoanProduct loanProduct = userLoanMapper.selectLoanProductById(loanApplication.getProductId());
         if (loanProduct==null){
@@ -252,7 +255,6 @@ public class UserLoanService {
 
     public int generateRepayment(LoanApplication loanApplication){
         log.info("生成还款计划请求");
-        LoanProduct product = userLoanMapper.selectLoanProductById(loanApplication.getProductId());
 
         if(loanApplication.getApplicationStatus()!=2){
             log.info("该请求审核未通过");
@@ -260,11 +262,30 @@ public class UserLoanService {
         };
 
         Integer applicationId = loanApplication.getApplicationId();
-        BigDecimal interest = product.getInterest();
         BigDecimal amount = loanApplication.getAmount();
-        Integer period = product.getPeriod();
         LocalDate startDate = loanApplication.getApplyTime().toLocalDate();
-        BigDecimal penalty = product.getPenalty();
+
+        BigDecimal interest;
+        Integer period;
+
+        // 优才产品：从 talent_product 读利率，期数用申请自选的 term
+        if (loanApplication.getProductType() != null && loanApplication.getProductType() == 1) {
+            TalentProduct talentProduct = talentProductMapper.selectById(loanApplication.getProductId());
+            if (talentProduct == null) {
+                log.info("优才产品不存在");
+                return 0;
+            }
+            interest = talentProduct.getInterestRate();
+            period = loanApplication.getTerm();
+        } else {
+            LoanProduct product = userLoanMapper.selectLoanProductById(loanApplication.getProductId());
+            if (product == null) {
+                log.info("产品不存在");
+                return 0;
+            }
+            interest = product.getInterest();
+            period = product.getPeriod();
+        }
 
         if(loanApplication.getInterestWay()==1){
             List<Repayment> plans = calculateEqualInstallment(applicationId,interest,amount,period,startDate);
